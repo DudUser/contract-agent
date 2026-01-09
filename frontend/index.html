@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Resumo Inteligente de Contratos</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="container hero fade-in fade-delay-1">
+    <h1>Resumo inteligente de contratos</h1>
+    <p class="lead">
+      Analise um contrato ou compare dois contratos em PDF
+    </p>
+  </section>
+
+  <!-- UPLOAD -->
+  <section class="container upload-box fade-in fade-delay-2">
+    <div class="panel">
+
+      <h3>Escolha o tipo de análise</h3>
+
+      <div class="mode-buttons">
+        <button id="btnSingle" class="mode-btn active" onclick="setMode('single')">
+          Analisar 1 contrato
+        </button>
+
+        <button id="btnCompare" class="mode-btn" onclick="setMode('compare')">
+          Comparar 2 contratos
+        </button>
+      </div>
+
+      <!-- SINGLE -->
+      <div id="singleBox" class="mode-box">
+
+        <label>Contrato (PDF)</label>
+        <input type="file" id="singleFile" accept="application/pdf">
+
+        <!-- LINGUAGEM SIMPLES -->
+        <div class="language-option fade-in">
+          <label class="language-toggle">
+            <input type="checkbox" id="simpleLanguage">
+            <span class="toggle-slider"></span>
+            <span class="toggle-label">Usar linguagem simples</span>
+          </label>
+
+          <div class="language-hint">
+            Deixa o resumo mais fácil de entender, sem perder informações importantes.
+          </div>
+        </div>
+
+        <button class="action-btn" onclick="analyzeSingle()">
+          Gerar resumo
+        </button>
+      </div>
+
+      <!-- COMPARE -->
+      <div id="compareBox" class="mode-box hidden">
+        <label>Contrato A</label>
+        <input type="file" id="fileA" accept="application/pdf">
+
+        <label>Contrato B</label>
+        <input type="file" id="fileB" accept="application/pdf">
+
+        <button class="action-btn" onclick="compareContracts()">
+          Comparar contratos
+        </button>
+      </div>
+
+      <!-- STATUS -->
+      <div id="statusBox" class="status-box hidden">
+        <span id="statusText"></span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RESULT -->
+  <section class="container result hidden" id="resultContainer">
+    <h3>Resultado</h3>
+    <pre id="resultText"></pre>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="container footer">
+    <small>
+      Este conteúdo é apenas informativo e não substitui análise jurídica profissional.
+    </small>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

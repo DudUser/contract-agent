@@ -1,0 +1,22 @@
+[2026-01-07 23:48:12] ERROR: Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+
+[2026-01-07 23:53:49] INFO: Iniciando leitura do PDF em memória
+[2026-01-07 23:53:49] INFO: Extração de texto concluída: 7 páginas processadas
+[2026-01-07 23:53:59] INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-01-07 23:53:59] INFO: Retrying request to /chat/completions in 0.384334 seconds
+[2026-01-07 23:54:00] INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-01-07 23:54:00] INFO: Retrying request to /chat/completions in 0.886600 seconds
+[2026-01-07 23:54:01] INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-01-07 23:54:04] INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-01-07 23:54:04] INFO: Retrying request to /chat/completions in 0.393939 seconds
+[2026-01-07 23:54:05] INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-01-07 23:54:05] INFO: Retrying request to /chat/completions in 0.879198 seconds
+[2026-01-07 23:54:06] INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-01-07 23:54:10] INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-01-07 23:54:10] INFO: Retrying request to /chat/completions in 0.376986 seconds
+[2026-01-07 23:54:11] INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2026-01-07 23:54:11] INFO: Retrying request to /chat/completions in 0.917321 seconds
+[2026-01-07 23:54:12] INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"

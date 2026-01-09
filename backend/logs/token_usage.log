@@ -1,0 +1,9 @@
+{
+ 'timestamp': '2026-01-07T22:41:13.512Z',
+ 'user_id': '192.168.0.12',
+ 'operation': 'summarize_contract',
+ 'model': 'gpt-4o-mini',
+ 'prompt_tokens': 1380,
+ 'completion_tokens': 420,
+ 'total_tokens': 1800
+}
